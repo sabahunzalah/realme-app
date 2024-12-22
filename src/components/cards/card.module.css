@@ -1,0 +1,76 @@
+
+.cardSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 5px;
+    margin-top: 200px;
+  }
+  
+  .card {
+    position: relative;
+    background: #fff;
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cardBadge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #00c4cc;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+  
+  .cardContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .cardText {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .cardText h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .cardText p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .cardPrice {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 10px;
+  }
+  
+  .cardImg img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 10px;
+  }
+  

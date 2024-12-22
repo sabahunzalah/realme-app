@@ -1,0 +1,84 @@
+
+
+ .navParent{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100%;
+    /* position: fixed; */
+}
+.left{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    width:45%;
+    
+    
+
+}
+.right{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 50px;
+    width:50%;
+    
+
+
+}
+.leftTitle{
+    /* border: 2px solid black; */
+    width: 20%;
+    font-size: 25px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+   
+}
+.leftTitle p{
+    margin: 0%;
+    font-family: "Outfit", serif;
+    font-weight: 400;
+    font-size: 27px;
+    letter-spacing: -0.8px;;
+}
+.leftLinks {
+width: 100%;
+}
+.leftLinks ul{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+   padding-left: 0%;
+    text-decoration: none;
+    gap: 25px;
+
+}
+.leftLinks li {
+    list-style-type: none;
+    font-family: "Outfit", serif;
+    font-size: 15px;
+    font-weight:400;
+    
+}
+.rightLinks ul{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    text-decoration: none;
+
+}
+.rightLinks li{
+    list-style-type: none;
+    font-family: "Outfit", serif;
+    font-size: 15px;
+    font-weight:400;
+
+}
