@@ -1,76 +1,87 @@
+.card {
+  /* border: 2px solid rgb(0, 255, 30); */
+  position: relative;
+  background: #fff;
+  height: 270px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-.cardSection {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 5px;
-    margin-top: 200px;
-  }
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cardBadge {
+ 
+  background: #00c4cc;
+  color: #fff;
+  font-size: 12px;
+  padding:4px;
+  border-radius: 20px;
+  width: 30px;
+  text-align: center;
+}
+
+.cardContent {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:100%;
+  width: 50%;
+  padding: 10px;
+  font-family: sans-serif;
   
-  .card {
-    position: relative;
-    background: #fff;
-    height: 270px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+}
+
+
+
+.cardText h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.cardText p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.cardPrice {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 10px;
+}
+
+.cardImg  {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 10px;
+}
+
+.cardImg img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+.mobileName{
+  font-size: 25px;
+  font-weight: bolder;
+  margin-top:10px;
+  margin-bottom: 10px;
   
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .cardBadge {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: #00c4cc;
-    color: #fff;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 15px;
-  }
-  
-  .cardContent {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  .cardText {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
-  .cardText h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  
-  .cardText p {
-    margin: 5px 0;
-    color: #555;
-  }
-  
-  .cardPrice {
-    font-size: 16px;
-    font-weight: bold;
-    color: #000;
-    margin-top: 10px;
-  }
-  
-  .cardImg img {
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 10px;
-  }
-  
+}
+.mobileDesc{
+  font-size: 16px;
+  color: #989898;
+ 
+}

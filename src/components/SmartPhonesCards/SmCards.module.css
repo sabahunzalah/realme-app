@@ -1,0 +1,13 @@
+.cardSection {
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 5px;
+  /* margin-top: 200px; */
+}
+.heading{
+    margin-top: 200px;
+    padding-left:30px;
+
+}
