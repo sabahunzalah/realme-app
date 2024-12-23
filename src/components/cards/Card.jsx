@@ -1,29 +1,24 @@
-
 import React from "react";
-import CardData from "./CardData";
-import styles from "./card.module.css"
+import styles from "./card.module.css";
 
-const Card = () => {
+const Card = ({ id, name, description, src, price }) => {
   return (
-    <div className={styles.cardSection}>
-      {CardData.map((card) => (
-        <div key={card.id} className={styles.card}>
-          <div className={styles.cardContent}>
-            <div>
-              <div className={styles.cardBadge}>NEW</div>
-              <h3>{card.name}</h3>
-              <p>{card.description}</p>
-            </div>
-          </div>
-
-          <div>
-            <p className={styles.cardPrice}>Rs. {card.price || "N/A"}</p>
-          </div>
-          <div className={styles.cardImg}>
-            <img src={card.src} alt={card.name} />
-          </div>
+    <div key={id} className={styles.card}>
+      <div className={styles.cardContent}>
+        <div>
+          <div className={styles.cardBadge}>NEW</div>
+          <h3 className={styles.mobileName}>{name}</h3>
+          <p className={styles.mobileDesc}>{description}</p>
         </div>
-      ))}
+        <div>
+        <p className={styles.cardPrice}>Rs. {price || "N/A"}</p>
+      </div>
+      </div>
+
+    
+      <div className={styles.cardImg}>
+        <img src={src} alt={name} />
+      </div>
     </div>
   );
 };

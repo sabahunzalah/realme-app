@@ -37,7 +37,7 @@ const CardData = [
     {
         id : 4,
         name:"realme Note 60",
-        description:"Campio Quality",
+        description:"Champion Quality",
         src:image4
 
     }  ,
